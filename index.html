@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razouani-Jad-TP2</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/formulaire.css" />
+  </head>
+  <body>
+    <!-- ===================== HERO ===================== -->
+    <div class="hero" id="accueil">
+      <div class="hero__centre">
+       <div class="hero__barresup">
+        <img class="hero__logo" src="./images/Everlast.png" alt="">
+        <h1 class="hero__titre">FitZone</h1>
+        <div class="navigation">
+          <label class="navigation__bouton" for="chk-burger">
+            <img
+              src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000"
+              width="32"
+              height="32"
+              alt="Menu"
+            />
+          </label>
+          <input type="checkbox" id="chk-burger" />
+          <nav class="navigation__menu">
+            <a href="#accueil">Accueil</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#nouveautés">Nouveautés</a>
+            <a href="#articles">Articles</a>
+            <a href="#galerie">Galerie</a>
+          </nav>
+        </div>
+      </div>
+      </div>
+
+
+      <header class="accueil">
+        <h2>Surpassez-vous en atteignant vos objectifs!</h2>
+        <h3>Auteur: Jad Razouani</h3>
+        <p>Ceci est un site web d'entraînement physique conçu pour vous aider à rester en forme et en bonne santé. 
+        Que vous soyez débutant ou athlète confirmé, vous trouverez ici des ressources, 
+        des conseils et des programmes adaptés à vos besoins.</p>
+        <p>Cours: 582-1W1 Mise en page Web | Collège de Maisonneuve | Automne 2025</p>
+        <p>Dépot GitHub:  https://github.com/JJD-OPS/1W1-TP2.git
+</p>
+        <a href="https://ton-lien-github.github.io/tp2">Page GitHub </a>
+        <div class="recherche">
+          <input type="search" placeholder="Rechercher un entraînement..." />
+          <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" alt="">
+          </div>
+        <a href="#inscription"> Inscription</a>
+      </header>
+    </div>
+    <!-- ===================== FORMULAIRE D'INSCRIPTION ===================== -->
+
+      <div id="inscription">
+      <section class="centre">
+        <legend class="formulaire__legend">Formulaire d'inscription</legend>
+        <form class="formulaire">
+      <div class="formulaire__div">
+            <fieldset>
+              <label class="formulaire__label" for="txt-nom">NOM</label>
+              <input
+                class="formulaire__text"
+                id="txt-nom"
+                type="text"
+                placeholder="Entrez votre nom"
+              />
+            </fieldset>
+            <fieldset>
+              <label class="formulaire__label" for="txt-prenom">PRÉNOM</label>
+              <input
+                class="formulaire__text"
+                id="txt-prenom"
+                type="text"
+                placeholder="Entrez votre prénom"
+              />
+            </fieldset>
+            <fieldset>
+              <label class="formulaire__label" for="txt-courriel"
+                >COURRIEL</label
+              >
+              <input
+                class="formulaire__text"
+                id="txt-courriel"
+                type="email"
+                placeholder="Entrez votre courriel"
+              />
+            </fieldset>
+            <fieldset>
+              <label class="formulaire__label" for="txt-telephone">TÉLÉPHONE</label>
+              <input
+                class="formulaire__text"
+                id="txt-telephone"
+                type="tel"
+                placeholder="Entrez votre numéro de téléphone"
+              />
+            </fieldset>
+            <fieldset>
+              <label class="formulaire__label" for="txt-adresse">ADRESSE</label>
+              <input
+                class="formulaire__text"
+                id="txt-adresse"
+                type="text"
+                placeholder="Entrez votre adresse"
+              />
+            </fieldset>
+            <fieldset>
+              <label
+                >Pro
+                <input type="radio" for="rad-abonnement" name="rad-abonnement"
+              />
+            <label
+              >Intérmediaire <input type="radio" for="rad-abonnement" name="rad-abonnement"
+            /></label>
+            <label>Débutant<input type="radio" for="rad-abonnement" name="rad-abonnement" /></label>
+          </div>
+        <input type="submit" value="Valider" />
+        </form>
+      </section>
+      </div>
+      <!-- ===================== Incorporer une section de tableau en présentation des données ===================== -->
+      <div id="tableau">
+        <section class="centre">
+          <h2 class="tableau__titre">Liste des membres inscrits</h2>
+          <table class="tableau">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Courriel</th>
+                <th>Téléphone</th>
+                <th>Adresse</th>
+                <th>Abonnement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Doe</td>
+                <td>John</td>
+                <td>john.doe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>123 Rue Principale</td>
+                <td>Débutant</td>
+              </tr>
+              <tr>
+                <td>Smith</td>
+                <td>Jane</td>
+                <td>jane.smith@example.com</td>
+                <td>(987) 654-3210</td>
+                <td>456 Avenue des Champs</td>
+                <td>Pro</td>
+              </tr>
+              <tr>
+                <td>Brown</td>
+                <td>Mike</td>
+                <td>mike.brown@example.com</td>
+                <td>(555) 123-4567</td>
+                <td>789 Boulevard de la Liberté</td>
+                <td>Débutant</td>
+              </tr>
+              <tr>
+                <td>Johnson</td>
+                <td>Emily</td>
+                <td>emily.johnson@example.com</td>
+                <td>(444) 555-6666</td>
+                <td>321 Rue de la Paix</td>
+                <td>Pro</td>
+              </tr>
+              <tr>
+                <td>Williams</td>
+                <td>David</td>
+                <td>david.williams@example.com</td>
+                <td>(333) 222-1111</td>
+                <td>654 Avenue de l'Industrie</td>
+                <td>Intérmediaire</td>
+              </tr>
+              <tr>
+                <td>Jones</td>
+                <td>Sarah</td>
+                <td>sarah.jones@example.com</td>
+                <td>(777) 888-9999</td>
+                <td>987 Boulevard des Fleurs</td>
+                <td>Débutant</td>
+              </tr>
+              <tr>
+                <td>Miller</td>
+                <td>Chris</td>
+                <td>chris.miller@example.com</td>
+                <td>(222) 333-4444</td>
+                <td>159 Rue du Soleil</td>
+                <td>Pro</td>
+
+              </tr>
+            </tbody>
+          </table>
+          <p>Pour plus d'informations sur nos membres, veuillez nous contacter.</p>
+        </section>
+      </div>
+      <!-- ===================== SECTION PRINCIPALE AVEC ARTICLES ===================== -->
+      <div class="millieu">
+    <main class="centre principal">
+        <h2 class="principal__h2">Titre</h2>
+        <section class="principal__section">
+            <article class="principal__article">
+                <h3 class="principale__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/boxing gloves.png" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Gants de boxe
+                    
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    17 octobre 2025
+                </figcaption>
+            </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/casque.png" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Casque de protection
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    3 décembre 2025
+                </figcaption>
+                </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/medicine ball.png" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                  medicine ball
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+                    3 décembre 2025
+                </figcaption>
+                </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/punching ball.png" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+             punching ball
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  3 décembre 2025
+                </figcaption>
+                </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/T-shirt.png" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Collège de Maisonneuve
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                    17 octobre 2025
+                </figcaption>
+                </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/Sylvain Lelièvre maisonneuve.jpg" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Collège de Maisonneuve
+
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    17 octobre 2025
+                </figcaption>
+            </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p"><img src="./images/piscine maisonneuve.jpg" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Collège de Maisonneuve
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    
+                    17 octobre 2025
+                </figcaption>
+            </figure>
+
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p">
+                <img src="./images/salle de combat maisonneuve.jpg" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Collège de Maisonneuve
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    
+                    17 octobre 2025
+                </figcaption>
+                </figure>
+            </article>
+
+            <article class="principal__article">
+                <h3 class="principal__h3">Article</h3>
+                <figure class="principal__figure">
+                <p class="principal__p">
+                <img src="./images/salle musculation maisonneuve.jpg" alt="" class="principal__img"></p>
+                <figcaption class="principal__figcaption">
+                    Collège de Maisonneuve
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                17 octobre 2025
+            </figcaption>
+            </figure>
+            </article>
+        </section>
+    </main>
+</div>
+    <!-- ===================== Pied de page ===================== -->
+    <div class="bas">
+    <footer class="pied centre">
+        <section class="pied__section">
+          <h2>Adresse Collège de Maisonneuve</h2>
+            <a>3800 R. Sherbrooke E. Montréal, QC H1K 2A2</a>
+            <a>Téléphone: 514-254-7131</a>
+            <a>Nombre d'étudiants: 7000</a>
+            <a>Nombre de programme offerts: 17</a>
+        </section>
+
+        <section class="pied__liens">
+          <h2>Liens</h2>
+            <a>css-tricks flex</a>
+            <a>MDN</a>
+            <a>flexbox please</a>
+            <a>flexboxfroggy</a>
+            <a>Jeu flexbox</a>
+        </section>
+
+        <section class="pied__sujet">
+        <p>Revenez pour vous entraîner quand vous voulez et continuez à en donner un peu plus</p>
+        </section>
+
+        <section class="pied__icones">
+            <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32">
+            <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32">
+            <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=000" width="32" height="32">
+            <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=github&color=000" width="32" height="32">       
+        </section>
+        
+         </footer>
+         
+        <cite class="pied__cite">Avis de confidentialité | Privacy Notice</cite>
+      
+     
+    </div>
+  
+  </body>
+  </html>

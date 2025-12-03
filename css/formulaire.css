@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: bisque;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inscription.formulaire{
+    max-width: 480px;
+    margin: 1.5rem auto;
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    position: relative;
+}
+.formulaire__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulaire fieldset {
+    margin: 30px 0;
+    border: 1px dotted #fff;
+}

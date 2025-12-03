@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 34, 34)
+}
+body > div > section, header, footer {
+    min-height: 100vh;
+    
+}
+h1, h2, h3, p {
+    margin: 0;
+    color: rgba(31, 132, 221, 0.653);
+    border: 1px solid #aaa;
+    padding: 5px;
+}
+
+/* Headings use Montserrat, accent uses Lobster */
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.hero__titre {
+    font-family: 'Lobster', cursive;
+}
+
+
+.centre {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+.menu {
+    position: fixed;
+    width: 350px;
+    top: 0;
+    right: 0;
+
+}
+.menu a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.accueil {
+    margin:0;
+    vertical-align: top;
+    width: 65%;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+}
+.recherche{
+    position: absolute;
+    width: 40%;
+    right: 5px;
+    top: 0px;
+}
+.recherche input {
+    width: 60%;
+    padding: 10px 8px 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.recherche img {
+    position: absolute;
+    right: 240px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+} 
+
+body > div:nth-of-type(1){
+    background-color: rgb(216, 161, 35)
+}
+    body > div:nth-of-type(2){
+    background-color: rgb(0, 0, 0);
+    }
+
+    body > div:nth-of-type(3){
+    background-color: rgb(216, 161, 35);
+    }
+    body > div:nth-of-type(4){
+    background-color: rgb(255, 0, 0);
+    }
+
+    body > div:nth-of-type(5){
+    background-color: aqua;
+    }
+    body > div:nth-of-type(6){
+    background-color: rgb(54, 83, 169);
+    }
+
+    body > div:nth-of-type(7){
+    background-color: rgb(67, 12, 71);
+    }
+    
+    /* ////////////////////////////////////////// */
+    
+    .hero {
+        background-image: url("../images/fitness.png");
+        min-height: 100vh;
+        background-position: 50%;
+        background-size: cover;
+    }
+    .hero__barresup {
+    background-color:transparent;
+}
+
+    .hero__titre {
+    background-color: rgb(40, 40, 40);
+    width: 15vh;
+}
+
+    .hero__centre {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 0 0;
+    max-width: 900px;
+}
+    .hero__logo {
+    height: 20vh;
+    border-radius: 5%;
+}
+    table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Enhanced tableau styles */
+.tableau {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.tableau thead th {
+    background: linear-gradient(90deg,#2a2a72,#4b3ca6);
+    color: #fff;
+    font-weight: 700;
+}
+.tableau tbody tr:nth-child(even){
+    background: #f7f7f7;
+}
+.tableau tbody tr:hover{
+    background: #e6f7ff;
+}
+.tableau td, .tableau th{
+    padding: 12px 10px;
+}
+
+/* /////////////////////////////////////////section d'articles//////////////////////////// */
+.principal__article {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 200px;
+
+}
+.principal__p {
+    display: flex;
+    flex-direction: column;
+}
+.principal__figure {
+    
+}
+
+
+/* ///////////////////////////////////////// pied de page //////////////////////////////// */
+.pied {
+    background-color: transparent;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+.pied__section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    vertical-align: top;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+}
+.pied__liens {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    vertical-align: top;
+    flex-wrap: wrap;
+}
+.pied__sujet {
+    display: flex;
+    align-items: center;
+}
+
+.pied__icones {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin: 0 auto 0 0;
+}
+.pied__cite {
+    display: block;
+    text-align: right;
+    margin: 0;
+}
