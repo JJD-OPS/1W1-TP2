@@ -6,6 +6,7 @@
     <title>Razouani-Jad-TP2</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/articles.css">
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/formulaire.css" />
   </head>
@@ -14,7 +15,7 @@
     <div class="hero" id="accueil">
       <div class="hero__centre">
        <div class="hero__barresup">
-        <img class="hero__logo" src="./images/Everlast.png" alt="">
+        <img class="hero__logo" src="images/Everlast.png" alt="">
         <h1 class="hero__titre">FitZone</h1>
         <div class="navigation">
           <label class="navigation__bouton" for="chk-burger">
@@ -47,7 +48,7 @@
         <p>Cours: 582-1W1 Mise en page Web | Collège de Maisonneuve | Automne 2025</p>
         <p>Dépot GitHub:  https://github.com/JJD-OPS/1W1-TP2.git
 </p>
-        <a href="https://ton-lien-github.github.io/tp2">Page GitHub </a>
+        <a href="https://github.com/JJD-OPS/1W1-TP2.git">Page GitHub </a>
         <div class="recherche">
           <input type="search" placeholder="Rechercher un entraînement..." />
           <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" alt="">
@@ -202,136 +203,58 @@
         </section>
       </div>
       <!-- ===================== SECTION PRINCIPALE AVEC ARTICLES ===================== -->
-      <div class="millieu">
-    <main class="centre principal">
-        <h2 class="principal__h2">Titre</h2>
-        <section class="principal__section">
-            <article class="principal__article">
-                <h3 class="principale__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/boxing gloves.png" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Gants de boxe
-                    
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    17 octobre 2025
-                </figcaption>
-            </figure>
-            </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/casque.png" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Casque de protection
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    3 décembre 2025
-                </figcaption>
+          <div>
+        <section class="centre" id="articles">
+            <h2 class="article__h2">Articles</h2>
+            <article class="article">
+                <div class="article__div">
+                   <h3>Titre de l'article</h3>
+                    <p class="article__p">Gants de boxe</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/boxing gloves.png" alt="">
+                    <figcaption class="article__figcaption">Des gants ultra-durables fabriqués en polymères, 
+                    les couches de mousse permettent d'amortir chaque coup reçu pour une meilleure flexibilité.</figcaption>
                 </figure>
             </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/medicine ball.png" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                  medicine ball
-
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-
-                    3 décembre 2025
-                </figcaption>
+            <article class="article">
+                <div class="article__div">
+                   <h3>Titre de l'article</h3>
+                    <p class="article__p">Medicine Ball</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/medicine ball.png" alt="">
+                    <figcaption class="article__figcaption">Un objet te permettant de faire travailler tous tes groupes musculaires
+                    en exécutant différents exercices. Parfait pour les entraînements à haute intensité. Bénéfique à la coordination et à l'équilibre 
+                    si tu l'utilises de la bonne façon.</figcaption>
                 </figure>
             </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/punching ball.png" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-             punching ball
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  3 décembre 2025
-                </figcaption>
+            <article class="article">
+                <div class="article__div">
+                   <h3>Titre de l'article</h3>
+                    <p class="article__p">Casque à haute protection</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/casque.png" alt="">
+                    <figcaption class="article__figcaption">Le casque iconique de notre marque, celui-ci est 
+                    conçu spécialement pour amortir les chutes. Les dimensions sont spécialement respectées pour encadrer ta boîte crânienne, 
+                    ce qui te protège d'une commotion cérébrale. Tu peux même l'utiliser pour faire du vélo!</figcaption>
                 </figure>
             </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/T-shirt.png" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Collège de Maisonneuve
-
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-                    17 octobre 2025
-                </figcaption>
+            <article class="article">
+                <div class="article__div">
+                   <h3>Titre de l'article</h3>
+                    <p class="article__p">T-Shirt original</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/T-shirt.png" alt="">
+                    <figcaption class="article__figcaption">T-shirt exprimant une fidélitè inégale pour notre organisation. 
+                    Seulement à 18 $.
+                    </figcaption>
                 </figure>
-            </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/Sylvain Lelièvre maisonneuve.jpg" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Collège de Maisonneuve
-
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    17 octobre 2025
-                </figcaption>
-            </figure>
-            </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p"><img src="./images/piscine maisonneuve.jpg" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Collège de Maisonneuve
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    
-                    17 octobre 2025
-                </figcaption>
-            </figure>
-
-            </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p">
-                <img src="./images/salle de combat maisonneuve.jpg" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Collège de Maisonneuve
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    
-                    17 octobre 2025
-                </figcaption>
-                </figure>
-            </article>
-
-            <article class="principal__article">
-                <h3 class="principal__h3">Article</h3>
-                <figure class="principal__figure">
-                <p class="principal__p">
-                <img src="./images/salle musculation maisonneuve.jpg" alt="" class="principal__img"></p>
-                <figcaption class="principal__figcaption">
-                    Collège de Maisonneuve
-
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                17 octobre 2025
-            </figcaption>
-            </figure>
             </article>
         </section>
-    </main>
-</div>
+    </div>
     <!-- ===================== Pied de page ===================== -->
     <div class="bas">
     <footer class="pied centre">

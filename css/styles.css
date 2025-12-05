@@ -35,6 +35,8 @@ h1, h2, h3 {
     max-width: 1300px;
     margin: 0 auto;
     background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 .menu {
@@ -144,7 +146,7 @@ body > div:nth-of-type(1){
     padding: 8px;
 }
 
-/* Enhanced tableau styles */
+
 .tableau {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     border-radius: 6px;
@@ -164,22 +166,6 @@ body > div:nth-of-type(1){
 .tableau td, .tableau th{
     padding: 12px 10px;
 }
-
-/* /////////////////////////////////////////section d'articles//////////////////////////// */
-.principal__article {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 200px;
-
-}
-.principal__p {
-    display: flex;
-    flex-direction: column;
-}
-.principal__figure {
-    
-}
-
 
 /* ///////////////////////////////////////// pied de page //////////////////////////////// */
 .pied {
